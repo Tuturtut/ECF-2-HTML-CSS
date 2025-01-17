@@ -8,8 +8,42 @@ body {
 
   margin: 0;
 
+  .flip {
+    transform: scaleX(-1);
+  }
+
   .svg {
     width: 3em;
+  }
+
+  .deco-line {
+    width: 5.5em;
+    margin-bottom: 2em;
+  }
+
+  h2 {
+    font-size: 2.8em;
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.3em;
+
+    strong {
+      font-weight: 700;
+    }
+  }
+
+  p {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #718096;
+    line-height: 2.2em;
+    margin: 0;
+  }
+
+  a {
+    font-size: 1.3em;
+    text-decoration: none;
+    font-weight: 500;
   }
 
   button {
@@ -99,11 +133,9 @@ body {
       }
     }
 
-    h6 {
-      font-size: 1.5em;
-      font-weight: 400;
-      color: #4a5568;
-      line-height: 2em;
+    p {
+      margin-top: 2em;
+      margin-bottom: 2em;
     }
 
     button {
@@ -148,12 +180,7 @@ body {
     background-color: #f9f9ff;
     padding-top: 3em;
 
-    h2 {
-      margin: 0;
-      font-weight: 700;
-      font-size: 2.2em;
-      text-align: center;
-    }
+    text-align: center;
 
     .services-cards {
       display: flex;
@@ -168,6 +195,7 @@ body {
       }
 
       .services-card {
+        text-align: left;
         box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.08);
         background-color: #fafafa;
         padding: 2em 1em;
@@ -176,8 +204,10 @@ body {
         min-width: 20em;
         border: 1px solid transparent;
         transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out;
+
         p {
-          line-height: 1.5em;
+          font-size: 1em;
+          line-height: 1.8em;
         }
 
         img {
@@ -191,6 +221,10 @@ body {
       .services-card:hover {
         border: 1px solid #75007b;
         transform: translateY(30px);
+
+        p {
+          color: #4a5568;
+        }
 
         h3 {
           color: #75007b;
@@ -238,22 +272,6 @@ body {
     padding: 8em 6em 0 8em;
     font-size: 1em;
 
-    h2 {
-      font-size: 2.8em;
-      margin: 0;
-      font-weight: 400;
-      line-height: 1.3em;
-
-      strong {
-        font-weight: 700;
-      }
-    }
-
-    .deco-line {
-      width: 4em;
-      margin-bottom: 2em;
-    }
-
     .video {
       display: flex;
       margin-bottom: 10em;
@@ -267,10 +285,6 @@ body {
         margin-right: 7em;
 
         p {
-          font-weight: 400;
-          color: #718096;
-          line-height: 2.2em;
-          margin: 0;
           margin-top: 2.5em;
           margin-bottom: 3em;
 
@@ -283,11 +297,6 @@ body {
           display: flex;
           align-items: center;
           gap: 1.5em;
-
-          a {
-            text-decoration: none;
-            font-weight: 500;
-          }
         }
       }
 
@@ -335,6 +344,104 @@ body {
     gap: 5em;
 
     overflow-x: scroll;
+  }
+
+  .customers-opinion {
+    padding: 0em 8em;
+    padding-top: 8em;
+    text-align: center;
+    margin-bottom: 3em;
+    height: 100vh;
+
+    h2 {
+      margin-bottom: 3em;
+    }
+    .quotes {
+      display: flex;
+      justify-content: space-between;
+      img {
+        align-self: flex-end;
+      }
+
+      .quote-item {
+        display: flex;
+        justify-content: space-evenly;
+        p {
+          width: 50%;
+        }
+
+        img {
+          width: 1.5em;
+          align-self: flex-start;
+        }
+
+        .end-single-quote {
+          align-self: flex-end;
+        }
+      }
+    }
+    .customers-opinion-list {
+      display: flex;
+      margin-top: 3em;
+      justify-content: center;
+      gap: 3em;
+
+      .customer {
+        display: flex;
+        flex-direction: column;
+        max-width: 15em;
+
+        img {
+          margin-bottom: -1.6em;
+          opacity: 0.5;
+        }
+
+        .stars {
+          display: flex;
+          gap: 0.4em;
+          justify-content: center;
+
+          img {
+            width: 1.3em;
+            margin: 0;
+            opacity: 1;
+          }
+        }
+
+        h6 {
+          color: #a0aec0;
+          font-weight: 500;
+          font-size: 1em;
+          margin-top: 1em;
+          margin-bottom: 1em;
+        }
+
+        p {
+          line-height: normal;
+          font-size: 0.8em;
+          font-weight: 400;
+          color: #e2e8f0;
+        }
+      }
+
+      .customer-active {
+        img {
+          opacity: 1;
+        }
+
+        h6 {
+          color: #57007b;
+          font-size: 1.1em;
+          font-weight: 700;
+        }
+
+        p {
+          color: black;
+          font-size: 0.9em;
+          font-weight: 400;
+        }
+      }
+    }
   }
 }
 

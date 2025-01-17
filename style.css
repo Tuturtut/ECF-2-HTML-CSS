@@ -5,8 +5,36 @@ body {
   font-family: "Inter", sans-serif;
   margin: 0;
 }
+body .flip {
+  transform: scaleX(-1);
+}
 body .svg {
   width: 3em;
+}
+body .deco-line {
+  width: 5.5em;
+  margin-bottom: 2em;
+}
+body h2 {
+  font-size: 2.8em;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.3em;
+}
+body h2 strong {
+  font-weight: 700;
+}
+body p {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #718096;
+  line-height: 2.2em;
+  margin: 0;
+}
+body a {
+  font-size: 1.3em;
+  text-decoration: none;
+  font-weight: 500;
 }
 body button {
   border-radius: 6px;
@@ -76,11 +104,9 @@ body header h1 #teams-gradient {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-body header h6 {
-  font-size: 1.5em;
-  font-weight: 400;
-  color: #4a5568;
-  line-height: 2em;
+body header p {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 body header button {
   font-weight: 600;
@@ -116,11 +142,6 @@ body .circle {
 body .services-we-offer {
   background-color: #f9f9ff;
   padding-top: 3em;
-}
-body .services-we-offer h2 {
-  margin: 0;
-  font-weight: 700;
-  font-size: 2.2em;
   text-align: center;
 }
 body .services-we-offer .services-cards {
@@ -135,6 +156,7 @@ body .services-we-offer .services-cards h3 {
   font-size: 1.3em;
 }
 body .services-we-offer .services-cards .services-card {
+  text-align: left;
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.08);
   background-color: #fafafa;
   padding: 2em 1em;
@@ -144,7 +166,8 @@ body .services-we-offer .services-cards .services-card {
   transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 body .services-we-offer .services-cards .services-card p {
-  line-height: 1.5em;
+  font-size: 1em;
+  line-height: 1.8em;
 }
 body .services-we-offer .services-cards .services-card img {
   width: 40px;
@@ -155,6 +178,9 @@ body .services-we-offer .services-cards .services-card img {
 body .services-we-offer .services-cards .services-card:hover {
   border: 1px solid #75007b;
   transform: translateY(30px);
+}
+body .services-we-offer .services-cards .services-card:hover p {
+  color: #4a5568;
 }
 body .services-we-offer .services-cards .services-card:hover h3 {
   color: #75007b;
@@ -193,19 +219,6 @@ body section {
   padding: 8em 6em 0 8em;
   font-size: 1em;
 }
-body section h2 {
-  font-size: 2.8em;
-  margin: 0;
-  font-weight: 400;
-  line-height: 1.3em;
-}
-body section h2 strong {
-  font-weight: 700;
-}
-body section .deco-line {
-  width: 4em;
-  margin-bottom: 2em;
-}
 body section .video {
   display: flex;
   margin-bottom: 10em;
@@ -219,10 +232,6 @@ body section .video .video-content {
   margin-right: 7em;
 }
 body section .video .video-content p {
-  font-weight: 400;
-  color: #718096;
-  line-height: 2.2em;
-  margin: 0;
   margin-top: 2.5em;
   margin-bottom: 3em;
 }
@@ -233,10 +242,6 @@ body section .video .video-content .link-list {
   display: flex;
   align-items: center;
   gap: 1.5em;
-}
-body section .video .video-content .link-list a {
-  text-decoration: none;
-  font-weight: 500;
 }
 body section .video #about-us-video {
   flex-shrink: 0;
@@ -273,6 +278,88 @@ body .partners {
   align-items: center;
   gap: 5em;
   overflow-x: scroll;
+}
+body .customers-opinion {
+  padding: 0em 8em;
+  padding-top: 8em;
+  text-align: center;
+  margin-bottom: 3em;
+  height: 100vh;
+}
+body .customers-opinion h2 {
+  margin-bottom: 3em;
+}
+body .customers-opinion .quotes {
+  display: flex;
+  justify-content: space-between;
+}
+body .customers-opinion .quotes img {
+  align-self: flex-end;
+}
+body .customers-opinion .quotes .quote-item {
+  display: flex;
+  justify-content: space-evenly;
+}
+body .customers-opinion .quotes .quote-item p {
+  width: 50%;
+}
+body .customers-opinion .quotes .quote-item img {
+  width: 1.5em;
+  align-self: flex-start;
+}
+body .customers-opinion .quotes .quote-item .end-single-quote {
+  align-self: flex-end;
+}
+body .customers-opinion .customers-opinion-list {
+  display: flex;
+  margin-top: 3em;
+  justify-content: center;
+  gap: 3em;
+}
+body .customers-opinion .customers-opinion-list .customer {
+  display: flex;
+  flex-direction: column;
+  max-width: 15em;
+}
+body .customers-opinion .customers-opinion-list .customer img {
+  margin-bottom: -1.6em;
+  opacity: 0.5;
+}
+body .customers-opinion .customers-opinion-list .customer .stars {
+  display: flex;
+  gap: 0.4em;
+  justify-content: center;
+}
+body .customers-opinion .customers-opinion-list .customer .stars img {
+  width: 1.3em;
+  margin: 0;
+  opacity: 1;
+}
+body .customers-opinion .customers-opinion-list .customer h6 {
+  color: #a0aec0;
+  font-weight: 500;
+  font-size: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+body .customers-opinion .customers-opinion-list .customer p {
+  line-height: normal;
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #e2e8f0;
+}
+body .customers-opinion .customers-opinion-list .customer-active img {
+  opacity: 1;
+}
+body .customers-opinion .customers-opinion-list .customer-active h6 {
+  color: #57007b;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+body .customers-opinion .customers-opinion-list .customer-active p {
+  color: black;
+  font-size: 0.9em;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 800px) {
