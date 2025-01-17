@@ -188,17 +188,91 @@ body .services-we-offer-circle {
   z-index: -1;
   transform: translateY(-50%);
 }
-body section .video-content {
-  width: 50%;
+body section {
+  position: relative;
+  padding: 8em 6em 0 8em;
+  font-size: 1em;
 }
-body section .video-content h2 {
+body section h2 {
+  font-size: 2.8em;
+  margin: 0;
   font-weight: 400;
+  line-height: 1.3em;
 }
-body section .video-content h2 strong {
+body section h2 strong {
   font-weight: 700;
 }
-body section .video-content p .colored {
+body section .deco-line {
+  width: 4em;
+  margin-bottom: 2em;
+}
+body section .video {
+  display: flex;
+  margin-bottom: 10em;
+  margin-right: 3em;
+}
+body section .video .video-content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-width: 40%;
+  margin-right: 7em;
+}
+body section .video .video-content p {
+  font-weight: 400;
+  color: #718096;
+  line-height: 2.2em;
+  margin: 0;
+  margin-top: 2.5em;
+  margin-bottom: 3em;
+}
+body section .video .video-content p .colored {
   color: #b0397e;
+}
+body section .video .video-content .link-list {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+body section .video .video-content .link-list a {
+  text-decoration: none;
+  font-weight: 500;
+}
+body section .video #about-us-video {
+  flex-shrink: 0;
+  width: 50%;
+}
+body section .video #about-us-video img {
+  width: 100%;
+  height: auto;
+}
+body section .video-bottom {
+  display: flex;
+  justify-content: space-between;
+  height: 12em;
+  margin-bottom: 3em;
+}
+body section .video-bottom .arrows {
+  align-self: self-end;
+  display: flex;
+  gap: 2em;
+}
+body section .video-bottom .arrows img {
+  width: 2em;
+}
+body section .video-circle {
+  z-index: -1;
+  transform: translateY(-50%);
+  right: 35%;
+}
+body .parteners {
+  width: 100%;
+  height: 30vh;
+  background-color: #f7f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
 }
 
 @media screen and (max-width: 800px) {

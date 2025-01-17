@@ -1,8 +1,8 @@
-@import "utilities/variable";
+@use "utilities/variable" as v;
 
 @import url("https://fonts.googleapis.com/css2?family=Inspiration&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 body {
-  background-color: $white;
+  background-color: v.$white;
   font-size: 16px;
   font-family: "Inter", sans-serif;
 
@@ -234,21 +234,106 @@ body {
   }
 
   section {
-    .video-content {
-      width: 50%;
+    position: relative;
+    padding: 8em 6em 0 8em;
+    font-size: 1em;
 
-      h2 {
-        font-weight: 400;
-        strong {
-          font-weight: 700;
+    h2 {
+      font-size: 2.8em;
+      margin: 0;
+      font-weight: 400;
+      line-height: 1.3em;
+
+      strong {
+        font-weight: 700;
+      }
+    }
+
+    .deco-line {
+      width: 4em;
+      margin-bottom: 2em;
+    }
+
+    .video {
+      display: flex;
+      margin-bottom: 10em;
+      margin-right: 3em;
+
+      .video-content {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        min-width: 40%;
+        margin-right: 7em;
+
+        p {
+          font-weight: 400;
+          color: #718096;
+          line-height: 2.2em;
+          margin: 0;
+          margin-top: 2.5em;
+          margin-bottom: 3em;
+
+          .colored {
+            color: #b0397e;
+          }
+        }
+
+        .link-list {
+          display: flex;
+          align-items: center;
+          gap: 1.5em;
+
+          a {
+            text-decoration: none;
+            font-weight: 500;
+          }
         }
       }
-      p {
-        .colored {
-          color: #b0397e;
+
+      #about-us-video {
+        flex-shrink: 0;
+        width: 50%;
+
+        img {
+          width: 100%;
+          height: auto;
         }
       }
     }
+
+    .video-bottom {
+      display: flex;
+      justify-content: space-between;
+      height: 12em;
+      margin-bottom: 3em;
+
+      .arrows {
+        align-self: self-end;
+        display: flex;
+        gap: 2em;
+
+        img {
+          width: 2em;
+        }
+      }
+    }
+
+    .video-circle {
+      z-index: -1;
+      transform: translateY(-50%);
+      right: 35%;
+    }
+  }
+  .parteners {
+    width: 100%;
+    height: 30vh;
+    background-color: #f7f7fa;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
   }
 }
 
