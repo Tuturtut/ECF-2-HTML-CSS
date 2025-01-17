@@ -283,7 +283,6 @@ body .customers-opinion {
   padding: 0em 8em;
   padding-top: 8em;
   text-align: center;
-  margin-bottom: 3em;
   height: 100vh;
 }
 body .customers-opinion h2 {
@@ -360,6 +359,85 @@ body .customers-opinion .customers-opinion-list .customer-active p {
   color: black;
   font-size: 0.9em;
   font-weight: 400;
+}
+body .case-studies {
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f7f7fa;
+  padding-top: 5em;
+}
+body .case-studies .deco-dotted-arrow {
+  position: absolute;
+}
+body .case-studies #deco-dotted-arrow1 {
+  top: -8em;
+  transform: scale(0.8);
+  left: 8em;
+}
+body .case-studies #deco-dotted-arrow2 {
+  top: -6em;
+  transform: rotate(-110deg);
+  right: 8em;
+}
+body .case-studies #circle-case-studies {
+  width: 1em;
+  left: 25em;
+  top: 1em;
+}
+body .case-studies .case-studies-list .case-studies-item-bg-pink {
+  background-color: #f1f2ff;
+}
+body .case-studies .case-studies-list .case-studies-item {
+  text-align: left;
+  display: flex;
+  margin-top: 5em;
+  margin: 5em;
+  border-radius: 3em;
+  border: 1px solid #e7daed;
+  box-sizing: border-box;
+}
+body .case-studies .case-studies-list .case-studies-item .case-studies-item-content {
+  width: 50%;
+  margin: 3em 6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .case-studies .case-studies-list .case-studies-item .case-studies-item-content p {
+  text-align: left;
+  line-height: 1.8em;
+  font-size: 1em;
+}
+body .case-studies .case-studies-list .case-studies-item .case-studies-item-content .case-studies-item-content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+body .case-studies .case-studies-list .case-studies-item .case-studies-item-content .case-studies-item-link {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  align-self: flex-end;
+}
+body .case-studies .case-studies-list .case-studies-item .case-studies-item-content .case-studies-item-link a {
+  font-size: 1em;
+  background: linear-gradient(225deg, #f76680 0%, #57007b 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body .case-studies .case-studies-list .case-studies-item .case-studies-item-content .case-studies-item-link img {
+  width: 0.5em;
+}
+body .case-studies .case-studies-list .case-studies-item img {
+  width: 50%;
+}
+body .case-studies .case-studies-list .case-studies-item h2 {
+  color: #2d3748;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 800px) {
