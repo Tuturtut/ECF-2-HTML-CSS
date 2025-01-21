@@ -268,32 +268,32 @@ body section .video #about-us-video img {
   width: 100%;
   height: auto;
 }
-body section .video-bottom {
+body .parteners .parteners-circle {
+  z-index: -1;
+  transform: translateY(50%);
+  right: 35%;
+  bottom: 0;
+}
+body .parteners .parteners-header {
   display: flex;
   justify-content: space-between;
-  height: 12em;
-  margin-bottom: 3em;
+  padding: 0em 8em;
 }
-body section .video-bottom .arrows {
+body .parteners .parteners-header .arrows {
   align-self: self-end;
   display: flex;
   gap: 2em;
 }
-body section .video-bottom .arrows img {
+body .parteners .parteners-header .arrows img {
   width: 2em;
 }
-body section .video-circle {
-  z-index: -1;
-  transform: translateY(-50%);
-  right: 35%;
-}
-body .partners {
-  height: 28vh;
+body .parteners .parteners-logo {
   background-color: #f7f7fa;
   padding: 0em 5em;
   display: flex;
   align-items: center;
   gap: 5em;
+  padding: 4em 5%;
   overflow-x: scroll;
 }
 body .customers-opinion {
@@ -501,8 +501,33 @@ body .case-studies #read-more-case-studies img {
     max-width: 100%;
     padding-bottom: 4em;
   }
-  body .customers-opinion {
-    display: none;
+  body section {
+    padding: 8em 2em;
+  }
+  body section .video {
+    gap: 5em;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  body section .video .video-content {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  body section .video .video-content p {
+    text-align: left;
+  }
+  body section .video #about-us-video {
+    width: 100%;
+  }
+  body .parteners .parteners-header {
+    padding: 0em 2em;
+    flex-direction: column;
+    height: auto;
+  }
+  body .parteners .parteners-logo img {
+    width: 10em;
   }
 }
 
