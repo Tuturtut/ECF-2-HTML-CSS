@@ -82,6 +82,10 @@ body nav button {
   padding-right: 25px;
   background: linear-gradient(225deg, #6675f7 0%, #57007b 100%);
 }
+body nav img {
+  width: 4em;
+  display: none;
+}
 body li {
   list-style: none;
 }
@@ -455,6 +459,15 @@ body .case-studies #read-more-case-studies img {
   }
   body .link-list {
     gap: 1.5em;
+  }
+  body nav ul {
+    display: none;
+  }
+  body nav button {
+    display: none;
+  }
+  body nav img {
+    display: block;
   }
 }
 

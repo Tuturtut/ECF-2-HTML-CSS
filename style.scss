@@ -99,6 +99,11 @@ body {
       padding-right: 25px;
       background: linear-gradient(225deg, #6675f7 0%, #57007b 100%);
     }
+
+    img {
+      width: 4em;
+      display: none;
+    }
   }
 
   li {
@@ -557,6 +562,20 @@ body {
 
     .link-list {
       gap: 1.5em;
+    }
+
+    nav {
+      ul {
+        display: none;
+      }
+
+      button {
+        display: none;
+      }
+
+      img {
+        display: block;
+      }
     }
   }
 }
