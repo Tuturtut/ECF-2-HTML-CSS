@@ -32,6 +32,7 @@ body p {
   margin: 0;
 }
 body a {
+  cursor: pointer;
   font-size: 1.3em;
   text-decoration: none;
   font-weight: 500;
@@ -367,7 +368,7 @@ body .case-studies {
   align-items: center;
   flex-direction: column;
   background-color: #f7f7fa;
-  padding-top: 5em;
+  padding: 5em;
 }
 body .case-studies .deco-dotted-arrow {
   position: absolute;
@@ -387,6 +388,18 @@ body .case-studies #circle-case-studies {
   left: 25em;
   top: 1em;
 }
+body .case-studies .case-studies-item-link {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  align-self: flex-end;
+}
+body .case-studies .case-studies-item-link a {
+  background: linear-gradient(225deg, #f76680 0%, #57007b 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 body .case-studies .case-studies-list .case-studies-item-bg-pink {
   background-color: #f1f2ff;
 }
@@ -394,7 +407,6 @@ body .case-studies .case-studies-list .case-studies-item {
   text-align: left;
   display: flex;
   margin-top: 5em;
-  margin: 5em;
   border-radius: 3em;
   border: 1px solid #e7daed;
   box-sizing: border-box;
@@ -411,26 +423,17 @@ body .case-studies .case-studies-list .case-studies-item .case-studies-item-cont
   line-height: 1.8em;
   font-size: 1em;
 }
+body .case-studies .case-studies-list .case-studies-item .case-studies-item-content a {
+  font-size: 1em;
+}
+body .case-studies .case-studies-list .case-studies-item .case-studies-item-content img {
+  width: 0.5em;
+}
 body .case-studies .case-studies-list .case-studies-item .case-studies-item-content .case-studies-item-content-text {
   display: flex;
   flex-direction: column;
   gap: 4em;
-}
-body .case-studies .case-studies-list .case-studies-item .case-studies-item-content .case-studies-item-link {
-  display: flex;
-  align-items: center;
-  gap: 0.7em;
-  align-self: flex-end;
-}
-body .case-studies .case-studies-list .case-studies-item .case-studies-item-content .case-studies-item-link a {
-  font-size: 1em;
-  background: linear-gradient(225deg, #f76680 0%, #57007b 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-body .case-studies .case-studies-list .case-studies-item .case-studies-item-content .case-studies-item-link img {
-  width: 0.5em;
+  margin-bottom: 3em;
 }
 body .case-studies .case-studies-list .case-studies-item img {
   width: 50%;
@@ -438,6 +441,12 @@ body .case-studies .case-studies-list .case-studies-item img {
 body .case-studies .case-studies-list .case-studies-item h2 {
   color: #2d3748;
   font-weight: 600;
+}
+body .case-studies #read-more-case-studies {
+  margin-top: 3em;
+}
+body .case-studies #read-more-case-studies img {
+  width: 0.5em;
 }
 
 @media screen and (max-width: 800px) {
