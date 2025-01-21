@@ -5,6 +5,14 @@ body {
   font-family: "Inter", sans-serif;
   margin: 0;
 }
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  margin: 0;
+}
 body .flip {
   transform: scaleX(-1);
 }
@@ -127,11 +135,15 @@ body header .header-content {
   height: 100%;
   padding: 0 8em;
 }
-body header .header-content div {
-  max-width: 45%;
-}
 body header .header-content img {
   max-width: 50%;
+}
+body header .header-content div {
+  display: flex;
+  flex-direction: column;
+}
+body header .header-content div button {
+  max-width: 15em;
 }
 body header .header-circle {
   bottom: 0;
@@ -453,21 +465,44 @@ body .case-studies #read-more-case-studies img {
   width: 0.5em;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 450px) {
   body {
     font-size: 12px;
   }
   body .link-list {
     gap: 1.5em;
   }
-  body nav ul {
+  body header {
+    height: auto;
+  }
+  body header nav ul {
     display: none;
   }
-  body nav button {
+  body header nav button {
     display: none;
   }
-  body nav img {
+  body header nav img {
     display: block;
+  }
+  body header .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    gap: 2em;
+    height: auto;
+    text-align: center;
+  }
+  body header .header-content div {
+    align-items: center;
+    gap: 3em;
+  }
+  body header .header-content img {
+    max-width: 100%;
+    padding-bottom: 4em;
+  }
+  body .customers-opinion {
+    display: none;
   }
 }
 
