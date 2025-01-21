@@ -529,6 +529,27 @@ body .case-studies #read-more-case-studies img {
   body .parteners .parteners-logo img {
     width: 10em;
   }
+  body .customers-opinion {
+    padding: 6em 0em;
+    height: auto;
+  }
+  body .customers-opinion .customers-opinion-list {
+    overflow-x: scroll;
+    justify-content: flex-start;
+  }
+  body .customers-opinion .quotes {
+    flex-direction: column;
+  }
+  body .customers-opinion .quotes .quote-item {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  body .customers-opinion .quotes .quote-item p {
+    width: 80%;
+  }
+  body .customers-opinion .quotes .arrow-svg {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

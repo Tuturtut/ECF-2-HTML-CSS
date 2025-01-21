@@ -651,9 +651,26 @@ body {
       }
     }
 
-    // temporary
-    // .customers-opinion {
-    //   display: none;
-    // }
+    .customers-opinion {
+      padding: 6em 0em;
+      height: auto;
+      .customers-opinion-list {
+        overflow-x: scroll;
+        justify-content: flex-start;
+      }
+      .quotes {
+        flex-direction: column;
+        .quote-item {
+          display: flex;
+          justify-content: space-evenly;
+          p {
+            width: 80%;
+          }
+        }
+        .arrow-svg {
+          display: none;
+        }
+      }
+    }
   }
 }
