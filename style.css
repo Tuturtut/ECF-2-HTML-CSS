@@ -90,7 +90,7 @@ body nav button {
   padding-right: 25px;
   background: linear-gradient(225deg, #6675f7 0%, #57007b 100%);
 }
-body nav img {
+body nav #burger-menu {
   width: 4em;
   display: none;
 }
@@ -464,6 +464,52 @@ body .case-studies #read-more-case-studies {
 body .case-studies #read-more-case-studies img {
   width: 0.5em;
 }
+body .development-aproach {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7f7fa;
+}
+body .development-aproach h2 {
+  margin: 1em 0em;
+  width: 30%;
+  text-align: center;
+}
+body .development-aproach .development-aproach-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  margin: 2em;
+}
+body .development-aproach .development-aproach-container .development-aproach-item {
+  background-color: white;
+  display: flex;
+  gap: 2em;
+  width: 30em;
+  border: 1px solid #e7daed;
+  padding: 4em 2em 6em 2em;
+}
+body .development-aproach .development-aproach-container .development-aproach-item .development-aproach-item-icon img {
+  width: 3em;
+  height: 3em;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: #f7666f;
+}
+body .development-aproach .development-aproach-container .development-aproach-item #rocket-icon img {
+  background-color: #29272e;
+}
+body .development-aproach .development-aproach-container .development-aproach-item #tag-icon img {
+  background-color: red;
+}
+body .development-aproach .development-aproach-container .development-aproach-item h3 {
+  margin-bottom: 2em;
+}
+body .development-aproach .development-aproach-container .development-aproach-item p {
+  font-size: 1em;
+  line-height: 1.6em;
+}
 
 @media screen and (max-width: 1300px) {
   body header {
@@ -475,7 +521,7 @@ body .case-studies #read-more-case-studies img {
   body header nav button {
     display: none;
   }
-  body header nav img {
+  body header nav #burger-menu {
     display: block;
   }
   body header .header-content {
@@ -566,6 +612,9 @@ body .case-studies #read-more-case-studies img {
   }
   body .case-studies .case-studies-list .case-studies-item .case-studies-item-content .case-studies-item-content-text {
     gap: 2em;
+  }
+  body .development-aproach h2 {
+    width: 70%;
   }
 }
 @media screen and (max-width: 900px) {
