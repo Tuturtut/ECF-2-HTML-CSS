@@ -550,6 +550,40 @@ body .case-studies #read-more-case-studies img {
   body .customers-opinion .quotes .arrow-svg {
     display: none;
   }
+  body .case-studies {
+    padding: 6em 2em;
+  }
+  body .case-studies .deco-dotted-arrow {
+    display: none;
+  }
+  body .case-studies #circle-case-studies {
+    display: none;
+  }
+  body .case-studies .case-studies-list .case-studies-item {
+    flex-direction: column;
+    border-radius: 2em;
+  }
+  body .case-studies .case-studies-list .case-studies-item img {
+    width: 100%;
+  }
+  body .case-studies .case-studies-list .case-studies-item .case-studies-item-content {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 3em 2em;
+    gap: 1em;
+  }
+  body .case-studies .case-studies-list .case-studies-item .case-studies-item-content h2 {
+    font-size: 2em;
+  }
+  body .case-studies .case-studies-list .case-studies-item .case-studies-item-content p {
+    text-align: left;
+    line-height: 1.8em;
+    font-size: 0.8em;
+  }
+  body .case-studies .case-studies-list .case-studies-item .case-studies-item-content .case-studies-item-content-text {
+    gap: 2em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

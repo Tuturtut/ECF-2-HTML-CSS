@@ -672,5 +672,46 @@ body {
         }
       }
     }
+    .case-studies {
+      padding: 6em 2em;
+      .deco-dotted-arrow {
+        display: none;
+      }
+
+      #circle-case-studies {
+        display: none;
+      }
+
+      .case-studies-list {
+        .case-studies-item {
+          flex-direction: column;
+          border-radius: 2em;
+
+          img {
+            width: 100%;
+          }
+
+          .case-studies-item-content {
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 3em 2em;
+            gap: 1em;
+            h2 {
+              font-size: 2em;
+            }
+            p {
+              text-align: left;
+              line-height: 1.8em;
+              font-size: 0.8em;
+            }
+
+            .case-studies-item-content-text {
+              gap: 2em;
+            }
+          }
+        }
+      }
+    }
   }
 }
