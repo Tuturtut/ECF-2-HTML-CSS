@@ -478,22 +478,22 @@ body {
     }
 
     #deco-dotted-arrow1 {
-      top: -8em;
+      top: -3%;
       transform: scale(0.8);
-      left: 8em;
+      left: 8%;
     }
 
     #deco-dotted-arrow2 {
-      top: -6em;
+      top: -3%;
 
       transform: rotate(-110deg);
-      right: 8em;
+      right: 8%;
     }
 
     #circle-case-studies {
       width: 1em;
-      left: 25em;
-      top: 1em;
+      left: 30%;
+      top: 1%;
     }
 
     .case-studies-item-link {
@@ -571,14 +571,8 @@ body {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1300px) {
   body {
-    font-size: 12px;
-
-    .link-list {
-      gap: 1.5em;
-    }
-
     header {
       height: auto;
       nav {
@@ -596,20 +590,14 @@ body {
       }
 
       .header-content {
+        padding: 10em 2em;
         display: flex;
+        gap: 3em;
+
         flex-direction: column;
-        align-items: center;
-        padding: 2em;
-        gap: 2em;
-        height: auto;
-        text-align: center;
         div {
           align-items: center;
-          gap: 3em;
-        }
-        img {
-          max-width: 100%;
-          padding-bottom: 4em;
+          text-align: center;
         }
       }
     }
@@ -617,26 +605,21 @@ body {
     section {
       padding: 8em 2em;
       .video {
+        align-items: center;
         gap: 5em;
         flex-direction: column;
-        align-items: center;
         margin: 0;
-        .video-content {
-          width: 100%;
-          margin: 0;
-          text-align: center;
 
-          p {
-            text-align: left;
-          }
+        .video-content {
+          width: 60%;
+          margin: 0;
         }
 
         #about-us-video {
-          width: 100%;
+          width: 70%;
         }
       }
     }
-
     .parteners {
       .parteners-header {
         padding: 0em 2em;
@@ -673,7 +656,7 @@ body {
       }
     }
     .case-studies {
-      padding: 6em 2em;
+      padding: 6em 10em;
       .deco-dotted-arrow {
         display: none;
       }
@@ -712,6 +695,68 @@ body {
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    .case-studies {
+      padding: 6em 4em;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    font-size: 12px;
+
+    .link-list {
+      gap: 1.5em;
+    }
+
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2em;
+      gap: 2em;
+      height: auto;
+      text-align: center;
+      div {
+        align-items: center;
+        gap: 3em;
+      }
+      img {
+        max-width: 100%;
+        padding-bottom: 4em;
+      }
+    }
+
+    section {
+      padding: 8em 2em;
+      .video {
+        gap: 5em;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        .video-content {
+          width: 100%;
+          margin: 0;
+          text-align: center;
+
+          p {
+            text-align: left;
+          }
+        }
+
+        #about-us-video {
+          width: 100%;
+        }
+      }
+    }
+    .case-studies {
+      padding: 6em 2em;
     }
   }
 }
