@@ -534,8 +534,8 @@ body .case-studies #read-more-case-studies img {
     height: auto;
   }
   body .customers-opinion .customers-opinion-list {
-    overflow-x: scroll;
-    justify-content: flex-start;
+    overflow-x: hidden;
+    justify-content: center;
   }
   body .customers-opinion .quotes {
     flex-direction: column;

@@ -655,8 +655,8 @@ body {
       padding: 6em 0em;
       height: auto;
       .customers-opinion-list {
-        overflow-x: scroll;
-        justify-content: flex-start;
+        overflow-x: hidden;
+        justify-content: center;
       }
       .quotes {
         flex-direction: column;
