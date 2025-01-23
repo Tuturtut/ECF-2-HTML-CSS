@@ -24,9 +24,12 @@ body .deco-line {
 }
 body h2 {
   font-size: 2.8em;
-  margin: 0;
   font-weight: 400;
+  color: black;
+  font-family: "Inter";
   line-height: 1.3em;
+  font-style: normal;
+  margin: 0;
 }
 body h2 strong {
   font-weight: 700;
@@ -35,14 +38,20 @@ body p {
   font-size: 1.5em;
   font-weight: 400;
   color: #718096;
+  font-family: "Inter";
   line-height: 2.2em;
+  font-style: normal;
   margin: 0;
 }
 body a {
-  cursor: pointer;
   font-size: 1.3em;
-  text-decoration: none;
   font-weight: 500;
+  color: black;
+  font-family: "Inter";
+  line-height: normal;
+  font-style: normal;
+  cursor: pointer;
+  text-decoration: none;
 }
 body button {
   border-radius: 6px;
@@ -52,14 +61,10 @@ body button {
 body .logo-text {
   font-size: 2.3em;
   font-weight: 400;
-  family: "Inspiration";
+  color: normal;
+  font-family: "Inter";
   line-height: normal;
-  font-style: normal;
-  font-family: "Inspiration", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2.3em;
-  margin: 0;
+  font-style: "Inspiration";
 }
 body .logo {
   display: flex;
@@ -81,13 +86,20 @@ body nav a {
   text-align: center;
   text-decoration: none;
   color: black;
-  font-weight: 500;
   font-size: 1em;
+  font-weight: 500;
+  color: black;
+  font-family: "Inter";
+  line-height: normal;
+  font-style: normal;
 }
 body nav button {
   font-size: 1em;
   font-weight: 600;
   color: white;
+  font-family: "Inter";
+  line-height: normal;
+  font-style: normal;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 25px;
@@ -108,6 +120,10 @@ body header {
 body header h1 {
   font-size: 4em;
   font-weight: 300;
+  color: black;
+  font-family: "Inter";
+  line-height: normal;
+  font-style: normal;
 }
 body header h1 #product-gradient {
   background: linear-gradient(180deg, #de4396 0%, rgba(13, 28, 159, 0) 100%);
@@ -126,9 +142,12 @@ body header p {
   margin-bottom: 2em;
 }
 body header button {
+  font-size: 1.2em;
   font-weight: 600;
-  color: #fafafa;
-  font-size: 1em;
+  color: white;
+  font-family: "Inter";
+  line-height: normal;
+  font-style: normal;
   padding: 20px 35px;
   background-color: #3d63ea;
   box-shadow: 0px 0px 100px 10px rgba(0, 0, 0, 0.2);
@@ -188,7 +207,11 @@ body .services-we-offer .services-cards .services-card {
 }
 body .services-we-offer .services-cards .services-card p {
   font-size: 1em;
+  font-weight: 400;
+  color: #718096;
+  font-family: "Inter";
   line-height: 1.8em;
+  font-style: normal;
 }
 body .services-we-offer .services-cards .services-card img {
   width: 40px;
@@ -238,7 +261,6 @@ body .services-we-offer-circle {
 body section {
   position: relative;
   padding: 8em 6em 0 8em;
-  font-size: 1em;
 }
 body section .video {
   display: flex;
@@ -356,9 +378,12 @@ body .customers-opinion .customers-opinion-list .customer .stars img {
   opacity: 1;
 }
 body .customers-opinion .customers-opinion-list .customer h6 {
-  color: #a0aec0;
-  font-weight: 500;
   font-size: 1em;
+  font-weight: 500;
+  color: #a0aec0;
+  font-family: "Inter";
+  line-height: normal;
+  font-style: normal;
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -372,9 +397,13 @@ body .customers-opinion .customers-opinion-list .customer-active img {
   opacity: 1;
 }
 body .customers-opinion .customers-opinion-list .customer-active h6 {
-  color: #57007b;
   font-size: 1.1em;
   font-weight: 700;
+  color: black;
+  font-family: "Inter";
+  line-height: normal;
+  font-style: normal;
+  color: #57007b;
 }
 body .customers-opinion .customers-opinion-list .customer-active p {
   color: black;
@@ -440,11 +469,12 @@ body .case-studies .case-studies-list .case-studies-item .case-studies-item-cont
 }
 body .case-studies .case-studies-list .case-studies-item .case-studies-item-content p {
   text-align: left;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #718096;
+  font-family: "Inter";
   line-height: 1.8em;
-  font-size: 1em;
-}
-body .case-studies .case-studies-list .case-studies-item .case-studies-item-content a {
-  font-size: 1em;
+  font-style: normal;
 }
 body .case-studies .case-studies-list .case-studies-item .case-studies-item-content img {
   width: 0.5em;
@@ -459,8 +489,12 @@ body .case-studies .case-studies-list .case-studies-item img {
   width: 50%;
 }
 body .case-studies .case-studies-list .case-studies-item h2 {
-  color: #2d3748;
+  font-size: 3em;
   font-weight: 600;
+  color: #2d3748;
+  font-family: "Inter";
+  line-height: normal;
+  font-style: normal;
 }
 body .case-studies #read-more-case-studies {
   margin-top: 3em;
@@ -524,7 +558,11 @@ body .development-aproach .development-aproach-container .development-aproach-it
 }
 body .development-aproach .development-aproach-container .development-aproach-item p {
   font-size: 1em;
+  font-weight: 400;
+  color: #718096;
+  font-family: "Inter";
   line-height: 1.6em;
+  font-style: normal;
 }
 body footer .hireDevelopers {
   background: linear-gradient(225deg, #f1f1f5 0%, #e4ecf7 100%);
@@ -587,9 +625,12 @@ body footer .footer .logoPart #google-perf {
 }
 body footer .footer p,
 body footer .footer a {
-  font-weight: 300;
   font-size: 1.2em;
+  font-weight: 300;
   color: #718096;
+  font-family: "Inter";
+  line-height: normal;
+  font-style: normal;
 }
 body footer .footer .links {
   flex: 1;
@@ -606,6 +647,9 @@ body footer .footer .links ul {
 }
 body footer .footer .contact-us {
   flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 body footer .footer .social-media {
   display: flex;

@@ -31,10 +31,8 @@ body {
   }
 
   h2 {
-    font-size: 2.8em;
+    @include font(2.8em, 400, $height: 1.3em);
     margin: 0;
-    font-weight: 400;
-    line-height: 1.3em;
 
     strong {
       font-weight: 700;
@@ -42,18 +40,14 @@ body {
   }
 
   p {
-    font-size: 1.5em;
-    font-weight: 400;
-    color: #718096;
-    line-height: 2.2em;
+    @include font(1.5em, 400, v.$p-color, 2.2em);
     margin: 0;
   }
 
   a {
+    @include font(1.3em, 500);
     cursor: pointer;
-    font-size: 1.3em;
     text-decoration: none;
-    font-weight: 500;
   }
 
   button {
@@ -63,12 +57,7 @@ body {
   }
 
   .logo-text {
-    @include font(2.3em, 400, "Inspiration", normal, normal);
-    font-family: "Inspiration", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2.3em;
-    margin: 0;
+    @include font(2.3em, 400, normal, normal, "Inspiration");
   }
 
   .logo {
@@ -94,15 +83,12 @@ body {
       text-align: center;
       text-decoration: none;
       color: black;
-      font-weight: 500;
-      font-size: 1em;
+      @include font(1em, 500);
     }
 
     button {
       // button
-      font-size: 1em;
-      font-weight: 600;
-      color: white;
+      @include font(1em, 600, white);
       padding-top: 15px;
       padding-bottom: 15px;
       padding-left: 25px;
@@ -125,8 +111,7 @@ body {
     position: relative;
 
     h1 {
-      font-size: 4em;
-      font-weight: 300;
+      @include font(4em, 300);
 
       #product-gradient {
         background: linear-gradient(
@@ -155,9 +140,8 @@ body {
     }
 
     button {
-      font-weight: 600;
-      color: #fafafa;
-      font-size: 1em;
+      @include font(1.2em, 600, white);
+
       padding: 20px 35px;
       background-color: #3d63ea;
       box-shadow: 0px 0px 100px 10px rgba(0, 0, 0, 0.2);
@@ -227,8 +211,7 @@ body {
         transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out;
 
         p {
-          font-size: 1em;
-          line-height: 1.8em;
+          @include font(1em, 400, #718096, 1.8em);
         }
 
         img {
@@ -291,7 +274,6 @@ body {
   section {
     position: relative;
     padding: 8em 6em 0 8em;
-    font-size: 1em;
 
     .video {
       display: flex;
@@ -430,9 +412,7 @@ body {
         }
 
         h6 {
-          color: #a0aec0;
-          font-weight: 500;
-          font-size: 1em;
+          @include font(1em, 500, #a0aec0);
           margin-top: 1em;
           margin-bottom: 1em;
         }
@@ -451,9 +431,8 @@ body {
         }
 
         h6 {
+          @include font(1.1em, 700);
           color: #57007b;
-          font-size: 1.1em;
-          font-weight: 700;
         }
 
         p {
@@ -533,12 +512,7 @@ body {
           justify-content: space-between;
           p {
             text-align: left;
-            line-height: 1.8em;
-            font-size: 1em;
-          }
-
-          a {
-            font-size: 1em;
+            @include font(1.2em, 400, v.$p-color, 1.8em);
           }
 
           img {
@@ -557,8 +531,7 @@ body {
         }
 
         h2 {
-          color: #2d3748;
-          font-weight: 600;
+          @include font(3em, 600, #2d3748);
         }
       }
     }
@@ -649,8 +622,7 @@ body {
         }
 
         p {
-          font-size: 1em;
-          line-height: 1.6em;
+          @include font(1em, 400, v.$p-color, 1.6em);
         }
       }
     }
@@ -724,9 +696,7 @@ body {
 
       p,
       a {
-        font-weight: 300;
-        font-size: 1.2em;
-        color: #718096;
+        @include font(1.2em, 300, v.$p-color);
       }
 
       .links {
@@ -744,6 +714,9 @@ body {
       }
       .contact-us {
         flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
       }
 
       .social-media {

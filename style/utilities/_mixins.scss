@@ -1,7 +1,15 @@
-@mixin font($size, $weight, $family: "Inter", $height: normal, $style: normal) {
+@mixin font(
+  $size,
+  $weight,
+  $color: black,
+  $height: normal,
+  $style: normal,
+  $family: "Inter"
+) {
   font-size: $size;
   font-weight: $weight;
-  family: $family;
+  color: $color;
+  font-family: $family;
   line-height: $height;
   font-style: $style;
 }
