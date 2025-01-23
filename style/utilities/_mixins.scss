@@ -1,0 +1,7 @@
+@mixin font($size, $weight, $family: "Inter", $height: normal, $style: normal) {
+  font-size: $size;
+  font-weight: $weight;
+  family: $family;
+  line-height: $height;
+  font-style: $style;
+}

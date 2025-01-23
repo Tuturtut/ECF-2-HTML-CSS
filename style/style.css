@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inspiration&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 body {
-  background-color: #fff;
   font-size: 16px;
   font-family: "Inter", sans-serif;
-  margin: 0;
+  margin: 0px;
 }
 body h1,
 body h2,
@@ -51,6 +50,11 @@ body button {
   color: white;
 }
 body .logo-text {
+  font-size: 2.3em;
+  font-weight: 400;
+  family: "Inspiration";
+  line-height: normal;
+  font-style: normal;
   font-family: "Inspiration", serif;
   font-weight: 400;
   font-style: normal;
@@ -175,7 +179,7 @@ body .services-we-offer .services-cards h3 {
 body .services-we-offer .services-cards .services-card {
   text-align: left;
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.08);
-  background-color: #fafafa;
+  background-color: #f9f9ff;
   padding: 2em 1em;
   border-radius: 10px;
   min-width: 20em;
@@ -288,7 +292,7 @@ body .parteners .parteners-header .arrows img {
   width: 2em;
 }
 body .parteners .parteners-logo {
-  background-color: #f7f7fa;
+  background-color: #f9f9ff;
   padding: 0em 5em;
   display: flex;
   align-items: center;
@@ -383,7 +387,7 @@ body .case-studies {
   text-align: center;
   align-items: center;
   flex-direction: column;
-  background-color: #f7f7fa;
+  background-color: #f9f9ff;
   padding: 5em;
 }
 body .case-studies .deco-dotted-arrow {
@@ -468,7 +472,7 @@ body .development-aproach {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f7f7fa;
+  background-color: #f9f9ff;
 }
 body .development-aproach h2 {
   margin: 1em 0em;
@@ -483,7 +487,7 @@ body .development-aproach .development-aproach-container {
   margin: 2em;
 }
 body .development-aproach .development-aproach-container .development-aproach-item {
-  background-color: white;
+  background-color: #fff;
   display: flex;
   gap: 2em;
   width: 30em;
@@ -626,7 +630,7 @@ body footer .footer .social-media .logo-container img {
   object-fit: contain;
 }
 body footer .footer-hr {
-  color: #cbd5e0;
+  color: #f9f9ff;
   margin-top: 5em;
   margin-bottom: 2em;
 }
