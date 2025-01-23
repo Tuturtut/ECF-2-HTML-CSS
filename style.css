@@ -498,10 +498,22 @@ body .development-aproach .development-aproach-container .development-aproach-it
   background-color: #f7666f;
 }
 body .development-aproach .development-aproach-container .development-aproach-item #rocket-icon img {
-  background-color: #29272e;
+  background: linear-gradient(225deg, #29272e 0%, #27272e 100%);
 }
 body .development-aproach .development-aproach-container .development-aproach-item #tag-icon img {
-  background-color: red;
+  background: linear-gradient(225deg, #68dbf2 0.01%, #509cf5 100%);
+}
+body .development-aproach .development-aproach-container .development-aproach-item #heart-icon img {
+  background: linear-gradient(225deg, #ff92ae 8.18%, #ff3d9a 95.84%);
+}
+body .development-aproach .development-aproach-container .development-aproach-item #shield-icon img {
+  background: linear-gradient(225deg, #67e9f1 0%, #24e795 100%);
+}
+body .development-aproach .development-aproach-container .development-aproach-item #validation-mark-icon img {
+  background: linear-gradient(225deg, #ffef5e 0%, #f7936f 100%);
+}
+body .development-aproach .development-aproach-container .development-aproach-item #locker-icon img {
+  background: linear-gradient(225deg, #f76680 0%, #57007b 100%);
 }
 body .development-aproach .development-aproach-container .development-aproach-item h3 {
   margin-bottom: 2em;
