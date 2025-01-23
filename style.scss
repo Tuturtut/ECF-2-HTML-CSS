@@ -692,6 +692,7 @@ body {
       display: flex;
       padding: 0em 5em;
       gap: 10em;
+      flex-wrap: wrap;
 
       h5 {
         font-size: 1.4em;
@@ -731,6 +732,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: start;
+        min-width: 20%;
         ul {
           display: flex;
           flex-direction: column;
@@ -894,6 +896,24 @@ body {
   body {
     .case-studies {
       padding: 6em 4em;
+    }
+
+    footer {
+      .hireDevelopers {
+        text-align: center;
+        flex-direction: column;
+        gap: 2em;
+      }
+
+      .footer {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        .logoPart {
+          align-items: center;
+        }
+      }
     }
   }
 }

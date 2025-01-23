@@ -556,6 +556,7 @@ body footer .footer {
   display: flex;
   padding: 0em 5em;
   gap: 10em;
+  flex-wrap: wrap;
 }
 body footer .footer h5 {
   font-size: 1.4em;
@@ -590,6 +591,7 @@ body footer .footer .links {
   display: flex;
   flex-direction: column;
   justify-content: start;
+  min-width: 20%;
 }
 body footer .footer .links ul {
   display: flex;
@@ -721,6 +723,19 @@ body footer .copyright {
 @media screen and (max-width: 900px) {
   body .case-studies {
     padding: 6em 4em;
+  }
+  body footer .hireDevelopers {
+    text-align: center;
+    flex-direction: column;
+    gap: 2em;
+  }
+  body footer .footer {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  body footer .footer .logoPart {
+    align-items: center;
   }
 }
 @media screen and (max-width: 450px) {
