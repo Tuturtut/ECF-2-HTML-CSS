@@ -693,6 +693,7 @@ body {
       padding: 0em 5em;
       gap: 10em;
       flex-wrap: wrap;
+      justify-content: center;
 
       h5 {
         font-size: 1.4em;
@@ -742,6 +743,28 @@ body {
       }
       .contact-us {
         flex: 2;
+      }
+
+      .social-media {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        margin-bottom: 2em;
+        .logo-container {
+          width: 2em;
+          height: 2em;
+          border-radius: 50%;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 1em;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
       }
     }
     .footer-hr {
