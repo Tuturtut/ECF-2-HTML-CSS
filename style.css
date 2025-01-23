@@ -610,6 +610,7 @@ body footer .footer .social-media {
   margin-bottom: 2em;
 }
 body footer .footer .social-media .logo-container {
+  align-self: flex-end;
   width: 2em;
   height: 2em;
   border-radius: 50%;
